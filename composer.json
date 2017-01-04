@@ -1,0 +1,26 @@
+{
+  "name": "rabbitmq",
+  "description": "Install rabbitmq using Composer",
+  "repositories": [{
+    "type": "composer",
+    "url": "http://legacy-packages-via.contao-community-alliance.org/"
+  }],
+  "require": {
+    "composer/installers": "~1.0",
+    "php-amqplib/php-amqplib": "2.5.*",
+    "php-amqplib/php-amqplib": "v2.1.0",
+    "monolog/monolog": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.1.*"
+  },
+  "autoload": {
+    "psr-4": {"Acme\\": "src/"}
+  },
+  "config": {
+    "vendor-dir": "vendor",
+    "secure-http": false
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
